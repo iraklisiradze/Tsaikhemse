@@ -21,14 +21,19 @@ header {
   height: 50px;
   font-weight: bold;
   font-size: 50px;
-  color: solid red;
+  color: solid white;
+}
+.menu_title {
+  display: flex;
+  font-size:50px;  
 }
 
 .hero_content {
-  margin-right: 5px;
+
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero {
@@ -44,12 +49,16 @@ header {
 .main_pic {
   width: 100%;
   height: auto;
-  opacity: 0.9;
-  
+  opacity: 0.9;  
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
 }
 
 ul.khemsebi {
-  width: 1366px;
+  width: 900px;
 }
 li.khemsi {
   width: 224px;
