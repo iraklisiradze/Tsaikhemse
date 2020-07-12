@@ -18,12 +18,13 @@ li.khemsi {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
  li.photo {
   width: 232px;
   height: 225px;
-  margin-bottom: 200px;
+  margin-bottom: 20px;
   padding: 12px;
 }
 ul {
