@@ -10,3 +10,25 @@
   width: 100%;
   height: 100%;
 }
+li.khemsi {
+  width:224px;
+  height: 391px;
+  margin: 29px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ li.photo {
+  width: 232px;
+  height: 225px;
+  margin-bottom: 200px;
+  padding: 12px;
+}
+ul {
+  width: 905px;
+  height: 898px;
+  display: flex;
+  flex-wrap: wrap;
+}
