@@ -51,6 +51,7 @@ header {
 }
 
 .menu {
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -99,10 +100,10 @@ ul {
     border: 1px solid green;
     text-align: center;
     text-decoration: none;
-    padding: 5px;
-    
+    padding: 5px;   
   
 }
-
-
+.add:hover {
+  background-color:green;
+}
 
