@@ -3,14 +3,16 @@
   padding: 0;
 }
 
-.italiano {
-  width: 806px;
-  height: 2034px;
-}
 header {
   display: flex;
   justify-content: space-between;
-  margin:15px;
+  margin: 15px;
+  text-decoration: none;
+}
+.right_header {
+  text-decoration: none;
+  justify-content: space-between;
+  flex-direction: column;
 }
 .hero {
   position: absolute;
@@ -30,7 +32,7 @@ header {
   margin: 30px;
   font-size: 70px;
   text-transform: uppercase;
-  color:yellow;
+  color: yellow;
   background-image: none;
   background-color: transparent;
 }
@@ -40,16 +42,37 @@ header {
   height: auto;
   opacity: 0.7;
 }
-.menu_title {
-  display: flex;
-  font-size: 50px;
-}
-
 .hero_content {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 75%;
+  right: 50%;
+}
+.hero_more {
+  width: 160px;
+  height: 42px;
+  box-sizing: border-box;
+  font-size: 25px;
+  background-color: green;
+  text-decoration: none;
+  border-radius: 7px;
+  text-align: center;
+  margin-bottom: 78px;
+}
+
+/*მენიუს დასაწყისი*/
+.menu_title {
+  display: flex;
+  font-size: 50px;
 }
 
 .menu {
@@ -64,7 +87,7 @@ ul.khemsebi {
   height: auto;
 }
 li.khemsi {
-  width: 284px;
+  width: 25%;
   height: 451px;
   margin: 29px;
   box-sizing: border-box;
@@ -73,7 +96,11 @@ li.khemsi {
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  border-color: 1px solid darkslategrey;
+  border-color: 2px solid rgb(15, 19, 19);
+}
+li.khemsi:hover {
+  border-color:red;
+  background-color:rgb(247, 247, 242); 
 }
 
 li.photo {
@@ -83,7 +110,7 @@ li.photo {
   padding: 12px;
 }
 ul {
-  width: 905px;
+  width: 1084px;
   height: 898px;
   display: flex;
   flex-wrap: wrap;
@@ -105,14 +132,16 @@ ul {
 .add:hover {
   background-color: green;
 }
+/*შავი ფონი*/
 
 .info {
   width: 100%;
   height: 900px;
-  background-color:black;
+  background-color: black;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
+  align-items: center;
 }
 
 .addres {
@@ -120,23 +149,22 @@ ul {
   height: 60px;
   box-sizing: border-box;
   font-size: 20px;
-  color:red;
+  color: red;
   line-height: 14px;
   border-color: green;
   background-color: blanchedalmond;
   border-radius: 30px;
   border: 1px solid green;
-  text-align: center;  
   padding: 17px;
-  display:flex;  
-  margin: 30px;
-
-}
-.map {
   display: flex;
-  border-radius: 15px;
+  margin: 30px;
 }
 
-.madeby {
-  background:url(./images/academy-logo.svg);
+#madeby {
+  background-image: url(academy-logo.svg);
+}
+
+#social {
+  background-image: url(Facebook.svg), url(./images/instagram.svg),
+    url(./images/youtube.svg);
 }
