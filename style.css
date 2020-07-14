@@ -10,6 +10,7 @@
 header {
   display: flex;
   justify-content: space-between;
+  margin:15px;
 }
 .hero {
   position: absolute;
@@ -27,17 +28,18 @@ header {
   font-weight: bold;
   box-sizing: border-box;
   margin: 30px;
-
-  font-size: 50px;
-  color: blue;
+  font-size: 70px;
+  text-transform: uppercase;
+  color:yellow;
+  background-image: none;
+  background-color: transparent;
 }
 
 .main_pic {
   width: 100%;
   height: auto;
-  opacity: 0.9;
+  opacity: 0.7;
 }
-
 .menu_title {
   display: flex;
   font-size: 50px;
@@ -51,7 +53,6 @@ header {
 }
 
 .menu {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -72,7 +73,7 @@ li.khemsi {
   justify-content: space-between;
   align-items: center;
   border-radius: 15px;
-  border-color:1px solid darkslategrey;
+  border-color: 1px solid darkslategrey;
 }
 
 li.photo {
@@ -89,21 +90,53 @@ ul {
 }
 
 .add {
-  
-    width: 121px;
-    height: 32px;
-    box-sizing: border-box;
-    font-size: 12px;
-    line-height: 14px;
-    border-color:green;
-    border-radius: 7px;    
-    border: 1px solid green;
-    text-align: center;
-    text-decoration: none;
-    padding: 5px;   
-  
+  width: 121px;
+  height: 32px;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 14px;
+  border-color: green;
+  border-radius: 7px;
+  border: 1px solid green;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px;
 }
 .add:hover {
-  background-color:green;
+  background-color: green;
 }
 
+.info {
+  width: 100%;
+  height: 900px;
+  background-color:black;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.addres {
+  width: 700px;
+  height: 60px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color:red;
+  line-height: 14px;
+  border-color: green;
+  background-color: blanchedalmond;
+  border-radius: 30px;
+  border: 1px solid green;
+  text-align: center;  
+  padding: 17px;
+  display:flex;  
+  margin: 30px;
+
+}
+.map {
+  display: flex;
+  border-radius: 15px;
+}
+
+.madeby {
+  background:url(./images/academy-logo.svg);
+}
