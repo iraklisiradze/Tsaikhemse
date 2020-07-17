@@ -6,67 +6,92 @@
 header {
   display: flex;
   justify-content: space-between;
-  margin: 15px;
+  margin: 15px 10%;
   text-decoration: none;
 }
 .right_header {
-  text-decoration: none;
   justify-content: space-between;
   flex-direction: column;
+}
+.right_header a {
+  text-decoration: none;
+}
+.main_pic {
+  background-color: black;
+  width: 100%;
+  height: 80%;
 }
 .hero {
   position: absolute;
-  top: 20%;
-  width: 100%;
-  text-align: center;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  /* right: 30%; fotoze dasma*/
+  width: 80%;
+  height: 20%;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  opacity: 1.5;
 }
-
 .hero_title {
-  width: 100%;
-  height: 100px;
+  width: 80%;
+  height: 50%;
   font-weight: bold;
-  box-sizing: border-box;
-  margin: 30px;
   font-size: 70px;
-  text-transform: uppercase;
-  color: yellow;
-  background-image: none;
-  background-color: transparent;
+
+  /*opacity: 0.9;*/
+}
+.hero p {
+  font-size: 25px;
+  padding: 10px;
+  width: 50%;
+  height: 50%;
 }
 
-.main_pic {
-  width: 100%;
-  height: auto;
-  opacity: 0.7;
-}
 .hero_content {
-  position: relative;
+  width: 100%;
+  height: calc(100vh-75px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 .container {
+  width: 10%;
+  height: 13%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  top: 75%;
+  top: 300px;
   right: 50%;
+  bottom:300px;
 }
 .hero_more {
   width: 160px;
   height: 42px;
   box-sizing: border-box;
-  font-size: 25px;
-  background-color: green;
+  font-size: 20px;
+  color: black;
   text-decoration: none;
+  background-color: rgb(152, 228, 101);
   border-radius: 7px;
   text-align: center;
-  margin-bottom: 78px;
+  /*margin-bottom: 30px;*/
+}
+.scroll_down {
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+.downclic {
+  background: url(./images/down.png) no-repeat;
+  width: 30px;
+  height: 30px;
 }
 
 /*მენიუს დასაწყისი*/
@@ -76,10 +101,14 @@ header {
 }
 
 .menu {
+  width: 100%;
+  height: calc(100%-500px);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background-color: #ffffff;
+  border-radius: 30px;
 }
 
 ul.khemsebi {
@@ -134,9 +163,9 @@ ul {
 }
 /*შავი ფონი*/
 
-.info {
+.blackback {
   width: 100%;
-  height: 100%;
+  height: 50%;
   background-color: black;
   display: flex;
   justify-content: flex-start;
@@ -145,20 +174,20 @@ ul {
 }
 
 .addres {
-  width: 73%;
+  width: 100%;
   height: 60px;
   box-sizing: border-box;
   font-size: 20px;
   color: red;
   line-height: 14px;
   border-color: green;
-  background-color: blanchedalmond;
+  background-color: #ffffff;
   border-radius: 30px;
   border: 1px solid green;
   padding: 17px;
   display: flex;
   align-items: center;
-  margin: 30px;
+  margin: 50px;
 }
 .addres address {
   display: flex;
@@ -166,25 +195,85 @@ ul {
 }
 .addres a {
   color: red;
+  text-decoration: none;
 }
-
 .map iframe {
   border-radius: 15px;
-  margin: 20px;
+  margin-top: 20px;
+  width: 150vh;
+
 }
 
-#madeby {
-  background: url(./images/academy-logo.svg) no-repeat; 
-  height: 300px;
+.madeby {
+  background: url(./images/academy-logo.svg) no-repeat;
+  width: 20%;
+  height: 40px;
+  /* position: absolute;
+  left:1%;
+  top:95%*/
 }
-
-#social {
-  background-image: url(Facebook.svg), url(./images/instagram.svg),
-    url(./images/youtube.svg);
-}
-.finish {
+.social {
+  width: 20%;
+  height: 20px;
+  position: absolute;
+  left: 45%;
+  top: 0;
   background-color: black;
-  height: 100vh;
-  width: 100vw;
-  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.facebook {
+  background: url(./images/Facebook.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.instagram {
+  background: url(./images/Instagram.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+.youtube {
+  background: url(./images/youtube.svg) no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+.mastercard {
+  background: url(./images/Cards.svg) no-repeat;
+  width: 45px;
+  height: 45px;
+  background: black;
+}
+
+.finish {
+  position: relative;
+  width: 100%;
+  height: 50px;
+}
+.shuazoli {
+  width: 70%;
+  height: auto;
+  position: relative;
+  bottom: 60px;
+  left: 15%;
+  right: 15%;
+}
+.main_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top:650px;
+}
+.supermain {
+  width:100%;
+  height: 100%;
+  position:relative;
+  bottom: 650px;
+}
+.mainblack {
+  width: 100%;
+  height: 600px;
+  background-color: black;
 }
