@@ -2,53 +2,70 @@
   margin: 0;
   padding: 0;
 }
+@font-face {
+  font-family: "fontinio";
+  src: url(./caps.ttf);
+}
 
 header {
+  max-width: 100%;
+  height: 40px;
   display: flex;
   justify-content: space-between;
-  margin: 15px 10%;
+  margin: 20px 10%;
+  font-family: "fontinio";
   text-decoration: none;
 }
-.right_header {
+/*.right_header {
   justify-content: space-between;
   flex-direction: column;
-}
+}*/
 .right_header a {
+  height: 100%;
   text-decoration: none;
+  margin-left: 20px;
+}
+.picture_elements {
+  width: 100%;
+  height: 33%;
 }
 .main_pic {
   background-color: black;
+  object-fit: cover;
   width: 100%;
   height: 80%;
+  opacity: 0.7;
 }
 .hero {
-  position: absolute;
-  top: 15%;
-  left: 15%;
-  right: 15%;
-  /* right: 30%; fotoze dasma*/
-  width: 80%;
-  height: 20%;
+  width: 60%;
+  height: 20%; 
   color: #ffffff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  opacity: 1.5;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  right: 25%;
+  z-index: 1;
 }
 .hero_title {
-  width: 80%;
-  height: 50%;
+  width: 100%;
+  height: 70%;
+  font-family: "fontinio";
   font-weight: bold;
-  font-size: 70px;
+  font-size: 50px;
 
   /*opacity: 0.9;*/
 }
 .hero p {
-  font-size: 25px;
-  padding: 10px;
-  width: 50%;
-  height: 50%;
+  font-size: 20px;
+  margin-top: 10px;
+  width: 70%;
+  height: 30%;
+  display: flex;
+  align-self:center;
 }
 
 .hero_content {
@@ -57,31 +74,32 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
 }
 .container {
-  width: 10%;
-  height: 13%;
+  width: 15%;
+  height: 29%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
   position: absolute;
-  top: 300px;
-  right: 50%;
-  bottom:300px;
+  top: 80%;
+  left: 42%;
 }
 .hero_more {
   width: 160px;
   height: 42px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-family: "fontinio";
+  font-size: 15px;
   color: black;
   text-decoration: none;
   background-color: rgb(152, 228, 101);
   border-radius: 7px;
-  text-align: center;
-  /*margin-bottom: 30px;*/
+
+  padding: 10px 23px;
+  margin-bottom: 70px;
 }
 .scroll_down {
   color: #ffffff;
@@ -90,19 +108,39 @@ header {
 }
 .downclic {
   background: url(./images/down.png) no-repeat;
-  width: 30px;
-  height: 30px;
+  width: 17px;
+  height: 50px;
+}
+.downclic:hover { 
+  transform: rotate(360deg);
+transition: 3000ms ease 500ms;3000ms ease 500ms;
+background: url(./images/down.png);
+animation-duration:2s;
+}
+
+
+
+/* შუა ელემენტების ზოლი*/
+.middle {
+  width: 80%;
+  height: 42%;
+  position: relative;
+  bottom: 60px;
+  left: 10%;
+  right: 10%;
 }
 
 /*მენიუს დასაწყისი*/
 .menu_title {
-  display: flex;
+  /*display: flex;*/
+  font-family: "fontinio";
   font-size: 50px;
 }
 
 .menu {
   width: 100%;
   height: calc(100%-500px);
+  padding: 50px 5px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -110,11 +148,14 @@ header {
   background-color: #ffffff;
   border-radius: 30px;
 }
-
-ul.khemsebi {
-  width: 80%;
-  height: auto;
+ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
 li.khemsi {
   width: 25%;
   height: 451px;
@@ -127,22 +168,19 @@ li.khemsi {
   border-radius: 15px;
   border-color: 2px solid rgb(15, 19, 19);
 }
+li.khemsi h2 {
+  font-family: "fontinio";
+}
 li.khemsi:hover {
   border-color: red;
   background-color: rgb(247, 247, 242);
 }
 
 li.photo {
-  width: 232px;
-  height: 225px;
+  width: 100%;
+  max-height: 50%;
   margin-bottom: 20px;
   padding: 12px;
-}
-ul {
-  width: 1084px;
-  height: 898px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .add {
@@ -161,11 +199,27 @@ ul {
 .add:hover {
   background-color: green;
 }
+.khemsi h2:hover {
+  animation-name:pinocchio;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes pinocchio {
+ from {
+    margin-left: 100%;
+    width: 100%; 
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 /*შავი ფონი*/
 
-.blackback {
+.blackback_els {
   width: 100%;
-  height: 50%;
+  height: 25%;
   background-color: black;
   display: flex;
   justify-content: flex-start;
@@ -178,39 +232,37 @@ ul {
   height: 60px;
   box-sizing: border-box;
   font-size: 20px;
-  color: red;
+  color:rgb(240, 113, 28);
   line-height: 14px;
   border-color: green;
   background-color: #ffffff;
   border-radius: 30px;
   border: 1px solid green;
-  padding: 17px;
+  padding: 17px 22%;
   display: flex;
   align-items: center;
   margin: 50px;
 }
-.addres address {
-  display: flex;
-  align-items: center;
-}
+
 .addres a {
-  color: red;
+  color:rgb(240, 113, 28);
   text-decoration: none;
+  margin-left: 30px;
+}
+.map {
+  width: 100%;
+  height: 45%;
 }
 .map iframe {
   border-radius: 15px;
   margin-top: 20px;
-  width: 150vh;
-
+  width: 100%;
 }
 
 .madeby {
   background: url(./images/academy-logo.svg) no-repeat;
   width: 20%;
-  height: 40px;
-  /* position: absolute;
-  left:1%;
-  top:95%*/
+  height: 40px;  
 }
 .social {
   width: 20%;
@@ -242,38 +294,49 @@ ul {
 
 .mastercard {
   background: url(./images/Cards.svg) no-repeat;
-  width: 45px;
-  height: 45px;
-  background: black;
+  width: 10%;
+  height: 80%;
+  box-sizing: border-box;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  margin: 2px;
 }
 
 .finish {
   position: relative;
   width: 100%;
   height: 50px;
+  box-sizing: border-box;
+  margin-top: 10px;
 }
-.shuazoli {
-  width: 70%;
-  height: auto;
-  position: relative;
-  bottom: 60px;
-  left: 15%;
-  right: 15%;
-}
-.main_container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  top:650px;
-}
-.supermain {
-  width:100%;
-  height: 100%;
-  position:relative;
-  bottom: 650px;
-}
+
 .mainblack {
   width: 100%;
   height: 600px;
   background-color: black;
+  position: relative;
+  bottom: 650px;
+  z-index: -1;
+}
+.leftpic {
+  background: url(./images/two.png) no-repeat;
+  width: 15%;
+  height: 250px;
+  position: absolute;
+  top: 265%;
+  z-index: -1;
+}
+.rightpic {
+  background: url(./images/one.png) no-repeat;
+  width: 15%;
+  height: 250px;
+  position: absolute;
+  right: 0%;
+  top: 100%;
+  z-index: 1;
+}
+.realmain {
+  max-width: 100%;
+  max-height: 100%;
 }
