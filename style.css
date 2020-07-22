@@ -16,10 +16,7 @@ header {
   font-family: "fontinio";
   text-decoration: none;
 }
-/*.right_header {
-  justify-content: space-between;
-  flex-direction: column;
-}*/
+
 .right_header a {
   height: 100%;
   text-decoration: none;
@@ -55,9 +52,7 @@ header {
   height: 70%;
   font-family: "fontinio";
   font-weight: bold;
-  font-size: 50px;
-
-  /*opacity: 0.9;*/
+  font-size: 50px;  
 }
 .hero p {
   font-size: 20px;
@@ -80,8 +75,7 @@ header {
   width: 15%;
   height: 29%;
   display: flex;
-  flex-direction: column;
-  /*justify-content: space-between;*/
+  flex-direction: column;  
   align-items: center;
   position: absolute;
   top: 80%;
@@ -97,7 +91,6 @@ header {
   text-decoration: none;
   background-color: rgb(152, 228, 101);
   border-radius: 7px;
-
   padding: 10px 23px;
   margin-bottom: 70px;
 }
@@ -117,8 +110,6 @@ transition: 3000ms ease 500ms;3000ms ease 500ms;
 background: url(./images/down.png);
 animation-duration:2s;
 }
-
-
 
 /* შუა ელემენტების ზოლი*/
 .middle {
@@ -200,11 +191,11 @@ li.photo {
   background-color: green;
 }
 .khemsi h2:hover {
-  animation-name:pinocchio;
+  animation-name:slider;
   animation-iteration-count: infinite;
   animation-duration: 5s;
 }
-@keyframes pinocchio {
+@keyframes slider {
  from {
     margin-left: 100%;
     width: 100%; 
@@ -340,3 +331,5 @@ li.photo {
   max-width: 100%;
   max-height: 100%;
 }
+
+
