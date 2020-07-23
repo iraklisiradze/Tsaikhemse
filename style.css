@@ -12,7 +12,7 @@ header {
   height: 40px;
   display: flex;
   justify-content: space-between;
-  margin: 20px 10%;
+  margin: 20px 10% 0 10%;
   font-family: "fontinio";
   text-decoration: none;
 }
@@ -22,8 +22,11 @@ header {
   text-decoration: none;
   margin-left: 20px;
 }
+/*ჰედერი მორჩა*/
+
+/*სურათი თავისი ელემენტებით*/
 .picture_elements {
-  width: 100%;
+  max-width: 100%;
   height: 33%;
 }
 .main_pic {
@@ -41,9 +44,10 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 22%;
   right: 25%;
   z-index: 1;
 }
@@ -56,11 +60,11 @@ header {
 }
 .hero p {
   font-size: 20px;
-  margin-top: 10px;
+  margin: 10px 20%;
   width: 70%;
   height: 30%;
-  display: flex;
-  align-self:center;
+  /*display: flex;
+  align-self:center;*/
 }
 
 .hero_content {
@@ -110,7 +114,7 @@ transition: 3000ms ease 500ms;3000ms ease 500ms;
 background: url(./images/down.png);
 animation-duration:2s;
 }
-
+/*სურათი მორჩა*/
 /* შუა ელემენტების ზოლი*/
 .middle {
   max-width: 80%;
@@ -156,6 +160,7 @@ li.khemsi {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
   border-radius: 15px;
   border-color: 2px solid rgb(15, 19, 19);
 }
@@ -205,13 +210,13 @@ li.photo {
     width: 100%;
   }
 }
-
+/* შუა ზოლი დასრულდა*/
 /*შავი ფონი*/
 
 .blackback_els {
   width: 100%;
   height: 25%;
-  background-color: black;
+  /*background-color: black;*/
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -232,7 +237,7 @@ li.photo {
   padding: 17px 22%;
   display: flex;
   align-items: center;
-  margin: 50px;
+  margin-top: 50px;
 }
 
 .addres a {
@@ -261,7 +266,7 @@ li.photo {
   position: absolute;
   left: 45%;
   top: 0;
-  background-color: black;
+  /*background-color: black;*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -304,15 +309,16 @@ li.photo {
 
 .blackfield {
   width: 100%;
-  height: 600px;
+  height: 550px;
   background-color: black;
   position: absolute;
-  top: 295%;
+  top: 300%;
   z-index: -1;
   /*position: relative;
   bottom: 650px;
   z-index: -1;*/
 }
+/*შავი მინდორი მორჩა*/
 .leftpic {
   background: url(./images/two.png) no-repeat;
   width: 15%;
@@ -335,12 +341,39 @@ li.photo {
   z-index: 1;*/
 }
 .realmain {
-  max-width: 100%;
-  max-height: 100%;
+  width: 1366px;
+  max-height: 768px;
 }
  /*responsive*/
 
- @media only screen and (max-width:1024px) {
+ @media screen and (max-width:740px) {
+   /*.realmain {
+     width: 20%;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+   }
+   .picture_elements {
+     width:50% ;
+     display: flex;
+     flex-wrap: wrap;
+   }*/
+
+   ul {
+     width: 20%;
+   }
+   /*.middle {
+     width: 50%;
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: column;
+   }
+   .finish {
+     max-width: 479px;
+     display: flex;
+     flex-wrap: wrap;
+
+   }*/
 
  }
 
