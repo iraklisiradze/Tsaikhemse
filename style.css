@@ -23,7 +23,6 @@ header {
   margin-left: 20px;
 }
 /*ჰედერი მორჩა*/
-
 /*სურათი თავისი ელემენტებით*/
 .picture_elements {
   max-width: 100%;
@@ -37,7 +36,7 @@ header {
   opacity: 0.7;
 }
 .hero {
- width: 60%;
+ width: 80%;
   height: 20%; 
   color: #ffffff;
   display: flex;
@@ -47,8 +46,8 @@ header {
   text-align: center;
   position: absolute;
   top: 40%;
-  left: 22%;
-  right: 25%;
+  left: 10%;
+  right: 10%;
   z-index: 1;
 }
 .hero_title {
@@ -124,8 +123,7 @@ animation-duration:2s;
 }
 
 /*მენიუს დასაწყისი*/
-.menu_title {
-  /*display: flex;*/
+.menu_title {  
   font-family: "fontinio";
   font-size: 50px;
 }
@@ -264,7 +262,6 @@ li.photo {
   position: absolute;
   left: 45%;
   top: 0;
-  /*background-color: black;*/
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -311,9 +308,7 @@ li.photo {
   position: absolute;
   top: 63px;
   z-index: -1;
-  /*position: relative;
-  bottom: 650px;
-  z-index: -1;*/
+  
 }
 
 .blackfield {
@@ -343,47 +338,40 @@ li.photo {
   position: absolute;
   right: 0%;
   top:98%;
-  z-index: 1;
-  /*position: absolute;
-  right: 0%;
-  top: 100%;
-  z-index: 1;*/
+  z-index: 1; 
 }
 .realmain {
   width: 1366px;
   max-height: 768px;
 }
- /*responsive*/
+ /*responsive 540*/
 
  @media screen and (max-width:540px) {
 
   body {
-    max-width:100vw;
-  }
- 
+    max-width:540px;
+  } 
 .picture_elements {
-  width:50%;
+  max-width:100vw;
+  max-height: 70vh;
 }
 .hero {
-  max-width: 80vw;
-   /*height: 20%;*/    
+  max-width: 10;    
    position: absolute;
    top: 30%;
-   left: 22%;
-   right: 25%;   
+   left: 12%;
+   right: 12%;   
  }
  .hero_title {
-  max-width: 100%;   
+  max-width: 500px; 
+  height: 40px;  
   font-size: 30px;  
 }
 .hero p {
   font-size: 15px;
   margin: 3px 20%;
   width: 70%;
-  height: 30%;
-}
-
-
+  }
 .middle {
   max-width: 100vw;
   position: relative;
@@ -391,17 +379,37 @@ li.photo {
   left: 0%;
   right: 0%;
 }
-.khemsi li {
-  width:100vw;
-  margin:0%;
-}  
-.blackfield {
-  max-width: 100vw;
+.khemsebi {
+  max-width: 40%;
+}
+li.khemsi {
+max-width: 80%;
+}
+.addres {  
+  height: 30px;  
+  font-size: 13px;  
+  line-height: 10px;  
+  border-radius: 30px;
+  padding: 5px 12%; 
+  margin-top: 1px;
+}
+.blackback_els {
+  width: 100vw;
+  height: 80vh;
+  background-color: black; 
+}
+.container {
+  width: 15%;
+  height: 29%;  
   position: absolute;
-  bottom: 0;
-} 
+  top: 60%;
+  left: 42%;
+}
+.finish { 
+  position:absolute;
+  bottom:3px;
+}
+
   
-/*.finish {
-     max-width: 479px;
-     }*/
+
  
