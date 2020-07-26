@@ -233,9 +233,8 @@ li.photo {
 /*შავი ფონი*/
 
 .blackback_els {
-  width: 100%;
-  /*height: 25%;*/
-  height: 36%;
+  width: 100%; 
+  height: 29%;
   /*background-color: black;*/
   display: flex;
   justify-content: flex-start;
@@ -267,11 +266,10 @@ li.photo {
 }
 .map {
   width: 100%;
-  height: 45%;
+  height: 55%;
 }
 .map iframe {
-  border-radius: 15px;
-  /*margin-top: 20px;*/
+  border-radius: 15px;  
   width: 100%;
   height: 100%;
 }
@@ -339,14 +337,11 @@ li.photo {
 .blackfield {
   width: 100%;
   height: 23%;
-  background-color: black;
+  background-color:rgb(24, 22, 22);
   position: absolute;
   bottom: 0;
   z-index: -1;
-  /*position: relative;
-  bottom: 650px;
-  z-index: -1;*/
-}
+ 
 /*შავი მინდორი მორჩა*/
 .leftpic {
   background: url(./images/two.png) no-repeat;
@@ -369,87 +364,109 @@ li.photo {
  /*responsive 540*/
 
  @media screen and (max-width:540px) {
-
- .main_pic {
-   min-width: 100%;
-}
-.hero_title {
-  font-size: 3rem;
-}
-.hero p {
-  font-size: 2rem;
-}
-.menu_title {
-  font-size: 3rem;
-}
-.khemsi h2 {
-  font-size: 2.5rem;
-}
-.khemsi p {
-  font-size: 2rem;
-}
-
-.picture_elements {
-  max-width: 100%;
+  .realmain {
+    max-width: 540px;
+    height: 3771px;
   }
   .middle {
-  width:90vw;
-  display: flex;
-  flex-wrap: wrap;
+    width:90%;
+    height: 84%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    .menu {
+      width: 100%;
+      height: 84%;
+    }
+    .blackback_els {
+      width: 100%;
+      height: 16%;
+    }
+  
+  
+   .main_pic {
+     min-width: 100%;
   }
-  li.khemsi {
-    width:80vw;
+  .hero_title {
+    font-size: 3rem;
   }
-
-
- 
-  /* body {
-    max-width:540px;
-  } */
-/*.picture_elements {
-  max-width:100vw;
-  max-height: 70vh;
-}
-
-
-.middle {
-  max-width: 100vw;
-  position: relative;
-  bottom: 20px;
-  left: 0%;
-  right: 0%;
-}
-.khemsebi {
-  max-width: 40%;
-}
-li.khemsi p {
-width: 80%;
-}
-.addres {  
-  height: 30px;  
-  font-size: 13px;  
-  line-height: 10px;  
-  border-radius: 30px;
-  padding: 5px 12%; 
-  margin-top: 1px;
-}
-.blackback_els {
-  width: 100vw;
-  height: 80vh;
-  background-color: black; 
-}
-.container {
-  width: 15%;
-  height: 29%;  
-  position: absolute;
-  top: 60%;
-  left: 42%;
-}
-.finish { 
-  position:absolute;
-  bottom:3px;
-}*/
-
-}
-
+  .hero p {
+    font-size: 2rem;
+  }
+  .menu_title {
+    font-size: 3rem;
+  }
+  .khemsi h2 {
+    font-size: 2.5rem;
+  }
+  .khemsi p {
+    font-size: 2rem;
+  }
+  
+  .picture_elements {
+    max-width: 100%;
+    }
+    
+    li.khemsi {
+      width:80vw;
+    }
+    .leftpic {
+      z-index:-3;
+    }
+    .rightpic {
+      z-index:-5;
+    }
+  
+  
+   
+    /* body {
+      max-width:540px;
+    } */
+  /*.picture_elements {
+    max-width:100vw;
+    max-height: 70vh;
+  }
+  
+  
+  .middle {
+    max-width: 100vw;
+    position: relative;
+    bottom: 20px;
+    left: 0%;
+    right: 0%;
+  }
+  .khemsebi {
+    max-width: 40%;
+  }
+  li.khemsi p {
+  width: 80%;
+  }
+  .addres {  
+    height: 30px;  
+    font-size: 13px;  
+    line-height: 10px;  
+    border-radius: 30px;
+    padding: 5px 12%; 
+    margin-top: 1px;
+  }
+  .blackback_els {
+    width: 100vw;
+    height: 80vh;
+    background-color: black; 
+  }
+  .container {
+    width: 15%;
+    height: 29%;  
+    position: absolute;
+    top: 60%;
+    left: 42%;
+  }
+  .finish { 
+    position:absolute;
+    bottom:3px;
+  }*/
+  
+  }
  
