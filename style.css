@@ -2,31 +2,47 @@
   margin: 0;
   padding: 0;
 }
+.realmain {
+  width: 100%;
+  height: 2034px;
+  position: relative;
+}
+html {
+  font-size: 10px;
+}
+
 @font-face {
   font-family: "fontinio";
   src: url(./caps.ttf);
 }
 
 header {
-  max-width: 100%;
-  height: 40px;
+  width: 100%;
+  height: 60px;
   display: flex;
-  justify-content: space-between;
-  margin: 20px 10% 0 10%;
+  justify-content:space-around;
+  /*margin: 20px 10% 0 10%;*/
   font-family: "fontinio";
   text-decoration: none;
 }
 
-.right_header a {
+.right_header {
   height: 100%;
   text-decoration: none;
+  margin: 20px 150px 0 20px;
+  font-size: 1.5rem;
+}
+.right_header a {
+  text-decoration: none;
   margin-left: 20px;
+  font-size: 1.5rem;
 }
 /*ჰედერი მორჩა*/
 /*სურათი თავისი ელემენტებით*/
 .picture_elements {
   max-width: 100%;
   height: 33%;
+  position: relative;
 }
 .main_pic {
   background-color: black;
@@ -44,8 +60,8 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  position: absolute;
-  top: 40%;
+ position: absolute;
+  top: 30%;
   left: 10%;
   right: 10%;
   z-index: 1;
@@ -79,7 +95,7 @@ header {
   flex-direction: column;  
   align-items: center;
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 42%;
 }
 .hero_more {
@@ -93,12 +109,12 @@ header {
   background-color: rgb(152, 228, 101);
   border-radius: 7px;
   padding: 10px 23px;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
 }
 .scroll_down {
   color: #ffffff;
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 .downclic {
   background: url(./images/down.png) no-repeat;
@@ -114,12 +130,14 @@ animation-duration:2s;
 /*სურათი მორჩა*/
 /* შუა ელემენტების ზოლი*/
 .middle {
-  max-width: 80%;
-  height: 42%;
+  width: 80%;
+  height: 70%;
   position: relative;
   bottom: 60px;
   left: 10%;
   right: 10%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /*მენიუს დასაწყისი*/
@@ -130,7 +148,8 @@ animation-duration:2s;
 
 .menu {
   width: 100%;
-  height: calc(100%-500px);
+  /*height: calc(100%-500px);*/
+  height: 64%;
   padding: 50px 5px;
   display: flex;
   flex-direction: column;
@@ -146,10 +165,12 @@ ul {
   flex-wrap: wrap;
   justify-content: center;
 }
-
+.menu_title {
+font-size: 3rem;
+}
 li.khemsi {
   width: 25%;
-  height: 451px;
+  height: 45%;
   margin: 29px;
   box-sizing: border-box;
   display: flex;
@@ -162,6 +183,10 @@ li.khemsi {
 }
 li.khemsi h2 {
   font-family: "fontinio";
+}
+li.khemsi p {
+  width: 70%;
+  height: 10%;
 }
 li.khemsi:hover {
   border-color: red;
@@ -211,7 +236,8 @@ li.photo {
 
 .blackback_els {
   width: 100%;
-  height: 25%;
+  /*height: 25%;*/
+  height: 29%;
   /*background-color: black;*/
   display: flex;
   justify-content: flex-start;
@@ -233,7 +259,7 @@ li.photo {
   padding: 17px 22%;
   display: flex;
   align-items: center;
-  margin-top: 50px;
+  margin: 50px 0 20px 0 ;
 }
 
 .addres a {
@@ -243,12 +269,13 @@ li.photo {
 }
 .map {
   width: 100%;
-  height: 45%;
+  height: 55%;
 }
 .map iframe {
   border-radius: 15px;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
   width: 100%;
+  height: 100%;
 }
 
 .madeby {
@@ -303,20 +330,19 @@ li.photo {
 }
 .blackbgforpic {
   width: 100%;
-  height: 685px;
+  height: 34%;
   background-color: black;
   position: absolute;
-  top: 63px;
-  z-index: -1;
-  
+  top:0;
+  z-index: -1;  
 }
 
 .blackfield {
   width: 100%;
-  height: 550px;
+  height: 23%;
   background-color: black;
   position: absolute;
-  top: 300%;
+  bottom: 0;
   z-index: -1;
   /*position: relative;
   bottom: 650px;
@@ -328,88 +354,113 @@ li.photo {
   width: 15%;
   height: 250px;
   position: absolute;
-  top: 265%;
+  bottom: 21%;
   z-index: -1;
 }
 .rightpic {
   background: url(./images/one.png) no-repeat;
-  width: 15%;
-  height: 250px;
+  width: 200px;
+  height: 261px;
   position: absolute;
-  right: 0%;
-  top:98%;
+  right: 0;
+  top:27%;
   z-index: 1; 
 }
-.realmain {
-  width: 1366px;
-  max-height: 768px;
-}
+
  /*responsive 540*/
 
  @media screen and (max-width:540px) {
-
-  body {
-    max-width:540px;
-  } 
-.picture_elements {
-  max-width:100vw;
-  max-height: 70vh;
-}
-.hero {
-  max-width: 10;    
-   position: absolute;
-   top: 30%;
-   left: 12%;
-   right: 12%;   
- }
- .hero_title {
-  max-width: 500px; 
-  height: 40px;  
-  font-size: 30px;  
-}
-.hero p {
-  font-size: 15px;
-  margin: 3px 20%;
-  width: 70%;
+  .realmain {
+    max-width: 540px;
+    /*height: 3771px;*/
+    height: auto;
   }
-.middle {
-  max-width: 100vw;
-  position: relative;
-  bottom: 20px;
-  left: 0%;
-  right: 0%;
+  html {
+    font-size: 10px;
+  }
+  
+  .picture_elements {
+    max-width: 100%;
+    height: 8%;
+    }
+  .hero_content {
+    max-width: 100%;
+    height: 50%;  
+  }
+ .main_pic {
+   max-width: 100%;
+   height: 40vh;
 }
-.khemsebi {
-  max-width: 40%;
-}
-li.khemsi {
-max-width: 80%;
-}
-.addres {  
-  height: 30px;  
-  font-size: 13px;  
-  line-height: 10px;  
-  border-radius: 30px;
-  padding: 5px 12%; 
-  margin-top: 1px;
-}
-.blackback_els {
-  width: 100vw;
-  height: 80vh;
-  background-color: black; 
+.blackbgforpic {
+  max-width: 540px;
+  height: 11%;
 }
 .container {
-  width: 15%;
-  height: 29%;  
-  position: absolute;
-  top: 60%;
-  left: 42%;
+  width: 10%;
+  height: 5%;
 }
-.finish { 
-  position:absolute;
-  bottom:3px;
-}
+
+  .middle {
+   max-width:90vw;
+    height: 85%;
+    padding: 0 5%;
+    left: 5%;
+  }
+    .menu {
+      width: 100%;
+      height: 84%;
+    }
+    .khemsebi {
+      width: 100%;
+      height: 100%;
+    }
+    ul.khemsi {
+      width: 100%;
+      height: 50vh;
+    }
+    .blackback_els {
+      width: 100%;
+      height: 16%;
+    }  
 
   
+  .hero_title {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .menu_title {
+    font-size: 3rem;
+  }
+  .khemsi h2 {
+    font-size: 2.5rem;
+  }
+  .khemsi p {
+    font-size: 2rem;
+  }
+ 
 
+
+    
+    li.khemsi {
+      width:80vw;
+    }
+    .leftpic {
+      z-index:-3;
+    }
+    .rightpic {
+      z-index:-5;
+    }
+
+  .social {
+    flex-wrap: wrap;
+  }
+  .addres {
+    font-size: 1rem;
+    padding: 5%;
+  }
+  
+   
+     }
  
