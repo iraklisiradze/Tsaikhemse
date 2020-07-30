@@ -4,7 +4,7 @@
 }
 .realmain {
   width: 100%;
-  height: 2034px;
+  height: auto;
   position: relative;
 }
 html {
@@ -394,6 +394,9 @@ li.photo {
 .blackbgforpic {
   max-width: 540px;
   height: 11%;
+}
+.blackfield {
+  height: 13%;
 }
 .container {
   width: 10%;
