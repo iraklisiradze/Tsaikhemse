@@ -20,8 +20,7 @@ header {
   width: 100%;
   height: 60px;
   display: flex;
-  justify-content:space-around;
-  /*margin: 20px 10% 0 10%;*/
+  justify-content:space-around;  
   font-family: "fontinio";
   text-decoration: none;
 }
@@ -38,12 +37,7 @@ header {
   font-size: 1.5rem;
 }
 /*ჰედერი მორჩა*/
-/*სურათი თავისი ელემენტებით*/
-.picture_elements {
-  width: 100%;
-  height: 33%;
-  position: relative;
-}
+
 .main_pic {
   background-color: black;
   object-fit: cover;
@@ -80,15 +74,7 @@ header {
   height: 30%;
 }
 
-.hero_content {
-  width: 100%;
-  /*height: calc(100vh-75px);*/
-  height: 30%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content:space-between;
-}
+
 .container {
   width: 15%;
   height: 29%;
@@ -132,13 +118,13 @@ animation-duration:2s;
 /* შუა ელემენტების ზოლი*/
 .middle {
   width: 80%;
-  height: 1350px;
- 
+  height: 1350px; 
   position: absolute;
   top: 90%;
   left:10%;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 /*მენიუს დასაწყისი*/
@@ -261,8 +247,7 @@ li.photo {
   height: 20%;
 }
 .map iframe {
-  border-radius: 15px;
-  /*margin-top: 20px;*/
+  border-radius: 15px;  
   width: 100%;
   height: 100%;
 }
@@ -328,11 +313,11 @@ li.photo {
 
 .blackfield {
   width: 100%;
-  height: 80%;
-  background-color: black;
+  height: 70%;
+  background-color: rgb(32, 31, 31);
   position: absolute;
-  top: 205%;
-  z-index: -2;
+  top: 195%;
+  z-index: -1;
 
 }
 /*შავი მინდორი მორჩა*/
