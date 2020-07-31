@@ -118,11 +118,12 @@ animation-duration:2s;
 /* შუა ელემენტების ზოლი*/
 .middle {
   width: 80%;
-  height: 1350px; 
+  height: 1305px; 
   position: absolute;
   top: 90%;
-  left:10%;
-  display: flex;
+  /*left:10%;*/
+  margin:0 5%;
+  display: flex;  
   flex-wrap: wrap;
   flex-direction: column;
 }
@@ -203,13 +204,10 @@ li.photo {
   background-color: green;
 }
 /* მეორე კლასის გასტილვა javascript-სთვის*/
-.add.added {
-  /*background-color: cornsilk;*/
+.add.added { 
   border: none;
   color:darkred;
 }
-
-
 
 .khemsi h2:hover {
   animation-name:slider;
@@ -258,7 +256,7 @@ li.photo {
 .map iframe {
   border-radius: 15px;  
   width: 100%;
-  height: 100%;
+  height: 100%;  
 }
 
 .madeby {
@@ -309,7 +307,7 @@ li.photo {
   width: 100%;
   height: 50px;
   box-sizing: border-box;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .blackbgforpic {
   width: 100%;
@@ -325,7 +323,7 @@ li.photo {
   height: 87%;
   background-color: rgb(32, 31, 31);
   position: absolute;
-  top: 240%;
+  top: 235%;
   z-index: -1;
 }
 /*შავი მინდორი მორჩა*/
@@ -335,7 +333,7 @@ li.photo {
   height: 250px;
   position: absolute;
   top: 201%;
-  z-index: -1;
+  z-index: -2;
 }
 .rightpic {
   background: url(./images/one.png) no-repeat;
@@ -350,10 +348,7 @@ li.photo {
  /*responsive 540*/
 
  @media screen and (max-width:540px) {
- /* .realmain {
-    max-width: 540px;    
-    height: auto;
-  }*/
+ 
   html {
     font-size: 10px;
   }
@@ -372,10 +367,11 @@ li.photo {
 }
 .blackbgforpic {
   max-width: 540px;
-  height: 11%;
+  height: 40vh;
 }
 .blackfield {
-  height: 13%;
+  height: 23%;
+  bottom:0;
 }
 .container {
   width: 10%;
@@ -383,23 +379,25 @@ li.photo {
 }
 
   .middle {
-   max-width:90vw;
+   width:90vw;
     height: auto;
-    padding: 0 5%;
-    left: 5%;
 
   }
-    .menu {
+    /*.menu {
       width: 100%;
       height: 84%;
-    }
+    }*/
     .khemsebi {
       width: 100%;
       height: 100%;
     }
-    ul.khemsi {
+    /*ul.khemsi {
       width: 100%;
       height: 50vh;
+    }*/
+    li.khemsi {
+      width: 100%;
+      height: 80vh;
     }
     .blackback_els {
       width: 100%;
