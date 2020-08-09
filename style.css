@@ -119,8 +119,8 @@ header {
   width: 80%;
   height: 1305px;
   position: absolute;
-  top: 90%;  
-  margin: 0 10%;
+  top: 90%;
+  margin: 0 10% 0 10%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -140,7 +140,7 @@ header {
   flex-direction: column;
   align-items: center;
   background-color: #ffffff;
-  border-color: 10px solid red;
+  border: 1px solid darkgreen;
   border-radius: 30px;
 }
 ul {
@@ -156,7 +156,6 @@ ul {
 li.khemsi {
   width: 30%;
   height: 50%;
-  margin: 9px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -176,13 +175,6 @@ li.khemsi p {
 li.khemsi:hover {
   border-color: red;
   background-color: rgb(247, 247, 242);
-}
-
-li.photo {
-  width: 100%;
-  max-height: 50%;
-  margin-bottom: 20px;
-  padding: 12px;
 }
 
 .add {
@@ -222,7 +214,7 @@ li.photo {
     width: 100%;
   }
 }
-/* შუა ზოლი დასრულდა*/
+/* menu დასრულდა*/
 
 .addres {
   width: 100%;
@@ -230,14 +222,15 @@ li.photo {
   box-sizing: border-box;
   font-size: 20px;
   color: rgb(240, 113, 28);
-  line-height: 14px;
+  /*line-height: 14px;*/
   border-color: green;
   background-color: #ffffff;
   border-radius: 30px;
   border: 1px solid green;
-  padding: 17px 22%;
+  padding: 0 20%;
   display: flex;
   align-items: center;
+  text-align: center;
   margin: 50px 0 20px 0;
 }
 
@@ -253,44 +246,34 @@ li.photo {
 .map iframe {
   border-radius: 15px;
   width: 100%;
-  height: 100%;
+  height: 40vh;
 }
 
 .madeby {
-  background: url(./images/academy-logo.svg) no-repeat;
+  /* background: url(./images/academy-logo.svg) no-repeat;*/
   width: 20%;
   height: 40px;
 }
 .social {
-  width: 20%;
+  width: 10%;
   height: auto;
-}
-
-.facebook {
-  background: url(./images/Facebook.svg) no-repeat;
-}
-.instagram {
-  background: url(./images/Instagram.svg) no-repeat;
-}
-.youtube {
-  background: url(./images/youtube.svg) no-repeat;
 }
 
 .mastercard {
   background: url(./images/Cards.svg) no-repeat;
-  width: 10%;
-  height: 70%;
-  box-sizing: border-box;
+  width: 20%;
+  height: 100%;
+  /*box-sizing: border-box;*/
 }
 
 .finish {
   width: 100%;
   height: auto;
   box-sizing: border-box;
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
-  flex-direction: raw;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .blackbgforpic {
   width: 100%;
@@ -306,7 +289,7 @@ li.photo {
   height: 87%;
   background-color: rgb(32, 31, 31);
   position: absolute;
-  top: 235%;
+  top: 230%;
   z-index: -1;
 }
 /*შავი მინდორი მორჩა*/
@@ -334,7 +317,10 @@ li.photo {
   html {
     font-size: 10px;
   }
-
+  .realmain {
+    width: auto;
+    height: auto;
+  }
   .main_pic {
     max-width: 100%;
     height: 40vh;
@@ -343,8 +329,8 @@ li.photo {
     height: 40vh;
   }
   .blackfield {
-    height: 53%;
-    top: 800%;
+    height: 150%;
+    top: 500%;
   }
   .container {
     width: 10%;
@@ -352,39 +338,47 @@ li.photo {
   }
 
   .middle {
-    width: 90vw;
-    height: auto;
+    width: 94%;
+    height: 1700px;
+    margin: 0 auto;
+    
+  }
+  .menu {
+    width: 100%;
+    height: 80%;
+    padding: 0;
+    border-radius: 50px;
   }
 
   .khemsebi {
     width: 100%;
     height: 100%;
+    padding: 0;
+    margin: 3px;
   }
-
   li.khemsi {
-    width: 35%;
-    height: 45vh;
+    width: 50%;
+    height: 33%;
   }
+ 
 
   .hero_title {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .hero p {
     font-size: 1.5rem;
   }
 
   .menu_title {
-    font-size: 3rem;
-  }
-  .khemsi h2 {
-    font-size: 2.5rem;
-  }
-  .khemsi p {
     font-size: 2rem;
   }
-  li.khemsi {
-    width: 80vw;
+  .khemsi h2 {
+    font-size: 1.5rem;
   }
+  .khemsi p {
+    font-size: 1rem;
+  }
+
   .leftpic {
     display: none;
   }
@@ -392,32 +386,40 @@ li.photo {
     display: none;
   }
 
-  .social {
-    flex-wrap: wrap;
-  }
   .addres {
-    font-size: 1rem;
+    height: 20px;
+    font-size: 1.2rem;
     padding: 5%;
+    border-radius: 20px;
+  }
+  .map {
+    width: 100%;
+    height: 10%;
+  }
+  .map iframe {   
+    width: 100%;
+    height: 100%;
   }
 }
 
 /* რესპონსივი 320-ზე mobile 1 pasta*/
-
+/*
 @media screen and (max-width: 320px) {
   html {
     font-size: 8px;
   }
   .realmain {
+    height: 3771px;
     height: auto;
   }
   header {
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content:flex-start;
-    margin-left: 20px;    
+    justify-content: flex-start;
+    margin-left: 20px;
   }
-  
+
   .right_header {
     display: none;
   }
@@ -429,9 +431,9 @@ li.photo {
     height: 30vh;
   }
   .blackfield {
-    
-    height: 130%;
-    top: 1030%;
+    height: 80%;  
+    top: 400%;
+    background-color: greenyellow;
   }
   .container {
     width: 10%;
@@ -439,21 +441,24 @@ li.photo {
   }
 
   .middle {
-    width: 90%;
-    height: auto;
-    /*margin:0 2%;*/
-    right:2%;
-   
+    max-width: 95vw;
+    height: auto;    
+    margin:0 auto;
+  }
+  .menu {
+    width:100%;
+    height: 70%;
   }
 
   .khemsebi {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   li.khemsi {
-    width: 100%;
-    height: 45vh;
+    width: 45%;
+    height: 300px;
+    margin:5px auto;
   }
 
   .hero_title {
@@ -477,7 +482,7 @@ li.photo {
   }
 
   .menu_title {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .khemsi h2 {
     font-size: 2.5rem;
@@ -513,7 +518,7 @@ li.photo {
 
   .finish {
     width: 100%;
-    height: 10vh;  
+    height: 10vh;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -529,8 +534,9 @@ li.photo {
     height: 20%;
   }
 
-   .mastercard {
+  .mastercard {
     width: 50%;
     height: 30%;
   }
 }
+*/
