@@ -244,20 +244,20 @@ li.khemsi:hover {
 }
 
 .madeby {
-  width: 133px;
+ max-width: 100px;
   height: 40px;
 }
 .social {
-  width: 66px;
+ max-width: 66px;
   height: auto;
 }
 
 .mastercard {
   background: url(./images/Cards.svg) no-repeat;
-  width: 102px;
+  width: 100px;
   height: 100%;  
-  display: flex;
-  align-self: flex-end; 
+ /* display: flex;
+  align-self: flex-end; */
 }
 
 .finish {
@@ -376,6 +376,16 @@ li.khemsi:hover {
     padding: 5%;
     border-radius: 20px;
   }
+  .madeby {
+    width: 33vw;
+  }
+  .social {
+    width: 20vw;
+  }
+  .mastercard {
+width:30vw;
+height: 50%;
+  } 
 
 
 /*რესპონსივი 320-ზე mobile 1 pasta*/
